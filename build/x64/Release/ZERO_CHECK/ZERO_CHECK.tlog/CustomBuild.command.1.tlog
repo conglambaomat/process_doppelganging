@@ -1,0 +1,10 @@
+^E:\DOANCOCHEMADOC\PROCESS_DOPPELGANGING\BUILD\CMAKEFILES\9965946DD9C2FC283547C4AA9DFF58A3\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/doancochemadoc/process_doppelganging -BE:/doancochemadoc/process_doppelganging/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/doancochemadoc/process_doppelganging/build/proc_doppel.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
